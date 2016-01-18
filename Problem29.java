@@ -1,0 +1,62 @@
+package week0;
+
+import java.util.Scanner;
+
+public class Problem29 {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+
+		String n = "11";
+		System.out.println(toNumber(n));
+		
+		String num = toNumber(n);
+		System.out.println(Palindrom(num));
+
+	}
+
+	public static String toNumber(String binary) {
+
+		int num = Integer.parseInt(binary);
+		String num2 = "";
+
+		while (num != 0) {
+			int num3=num%2;
+			num2+=num3;
+			num=num/2;
+
+		}
+
+	
+		return num2;
+
+	}
+	
+	public static Boolean Palindrom(String numBinar){
+		
+		String numBinar1 = "";
+		String numBinar2 = "";
+		
+		for(int i = 0; i<numBinar.length()/2;i++){
+			
+			numBinar1 +=numBinar.charAt(i);
+		}
+			for(int j=numBinar.length()/2;j<numBinar.length();j++){
+				
+				numBinar2 +=numBinar.charAt(j);
+				
+			}
+			
+			if(numBinar1.equals(numBinar2)){
+				return true;
+			}
+			return false;
+		}
+		
+	}
+	
+
+
