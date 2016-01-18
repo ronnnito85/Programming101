@@ -1,7 +1,7 @@
 package week0;
 
 import java.util.Scanner;
-//you can name your files with the name of task. It will be aesy to find them later
+
 public class Problem1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
